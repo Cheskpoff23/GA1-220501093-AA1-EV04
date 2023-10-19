@@ -1,0 +1,169 @@
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\usepackage[letterpaper,portrait]{geometry}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{lipsum}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{csquotes}
+\usepackage[spanish]{babel}
+\usepackage{apacite}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{pgfplots}
+\usepackage{bm}
+\usepackage{tocloft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Other Settings
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\geometry{letterpaper, margin=2.54cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{ocre}{RGB}{243,102,25}
+\definecolor{mygray}{RGB}{243,243,244}
+\definecolor{deepGreen}{RGB}{26,111,0}
+\definecolor{shallowGreen}{RGB}{235,255,255}
+\definecolor{deepBlue}{RGB}{61,124,222}
+\definecolor{shallowBlue}{RGB}{235,249,255}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define an orangebox command %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\orangebox[1]{\fcolorbox{ocre}{mygray}{\hspace{1em}#1\hspace{1em}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% English Environments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheoremstyle{mytheoremstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\newtheoremstyle{myproblemstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowGreen,linecolor=deepGreen,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{theorem}{Theorem}[section]
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]
+\theoremstyle{myproblemstyle}
+\newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plotting Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepgfplotslibrary{colorbrewer}
+\pgfplotsset{width=8cm,compat=1.9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Gustavo Vergara}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\pgfplotsset{compat=1.18}
+\setstretch{2}
+
+\begin{titlepage}
+    \centering
+    \vspace{2.5cm}
+    {\scshape \Large Documento identificando la metodología para el proyecto de desarrollo de software - GA1-220501093-AA1-EV04 \par}
+    \vspace{5cm}
+    \textbf\large\scshape{\par}
+         \vspace{0.5cm}
+         
+    {\Large Vergara Pareja Gustavo\par}
+    \vspace{5cm}
+    {\scshape\Large Fabiola Perez Camacho\par}
+    \vspace{0.3cm}
+    {\scshape\Large Tecnología en Análisis y Desarrollo de Software \par}
+    \vspace{0.3cm}
+    {\scshape\Large SENA - Centro Agropecuario Regional Cauca\par}
+    \vspace{0.3cm}
+    {\Large \today \par}
+    \end{titlepage}
+
+\begin{flushleft}
+    \large \textbf{EVIDENCIA A SOLUCIONAR}\\
+    \vspace{0.1cm}
+    \section*{Evidencia de producto: GA1-220501093-AA1-EV04 documento identificando la metodología para el proyecto de desarrollo de software}
+    
+Teniendo en cuenta la información recopilada y la idea de proyecto selecciona realizar un informe donde se describa y justifique la metodología de desarrollo de software a utilizar.
+Elementos para tener en cuenta en el informe:
+\begin{itemize}
+    \item Se deben seguir las normas básicas de presentación de un documento escrito, es decir el documento debe tener como mínimo una portada, introducción, desarrollo y bibliografía.
+    \item El informe debe evidenciar una justificación clara de la selección de la metodología respecto al proyecto a desarrollar.
+    \item Debe incluir una descripción del contexto y características del proyecto.
+    \item El informe debe evidenciar el uso de filtros tales como tamaño del proyecto, periodicidad de realimentación con el cliente, estado de la tecnología, etc.
+\end{itemize}   
+    \end{flushleft}
+    \newpage
+    \tableofcontents
+    \newpage
+\section{Introducción}
+
+El presente documento tiene como objetivo justificar la selección de la metodología de programación extrema (XP) para el desarrollo del sistema de gestión de citas médicas para la Clínica Regional de Montelibano.
+
+\section{Contexto y características del proyecto}
+
+El proyecto se desarrolla en el contexto de una clínica médica, que requiere un sistema eficiente de agendamiento de citas que permita gestionar de manera adecuada la programación de consultas médicas. Para una población de mas de 100 000 habitantes.
+
+El proyecto tiene las siguientes características:
+\begin{itemize}
+    \item Tamaño relativamente pequeño: El proyecto tiene un tamaño estimado de 10 000 líneas de código, lo que lo clasifica como un proyecto de tamaño pequeño.
+    \item Requisitos cambiantes: Los requisitos del proyecto son susceptibles de cambios, lo que es común en el contexto de una clínica médica.
+    \item Necesidad de entrega rápida: El proyecto tiene una fecha límite de entrega de 10 meses.
+    \item Alta importancia para el cliente: El sistema de gestión de citas médicas es un sistema crítico para el funcionamiento de la clínica, por lo que es de alta importancia para el cliente.
+\end{itemize}
+
+\section{Justificación de la metodología XP}
+
+La metodología XP se basa en los siguientes principios:
+\begin{itemize}
+    \item Comunicación y Coraje: La comunicación entre los miembros del equipo es fundamental para el éxito del proyecto.
+    \item Feedback: El cliente debe proporcionar retroalimentación constante al equipo de desarrollo.
+    \item Simplicidad: El software debe ser simple de entender y mantener.
+    \item Colaboración y Respeto: El equipo debe trabajar de forma colaborativa para entregar el software.
+
+\end{itemize}
+
+
+
+La metodología XP es adecuada para el proyecto de gestión de citas médicas por las siguientes razones:
+\begin{itemize}
+    \item Adaptabilidad a proyectos de pequeño tamaño: XP es una metodología ágil que se adapta bien a proyectos de pequeño tamaño, como el proyecto en cuestión.
+    \item Soporte a cambios en los requisitos: XP está diseñado para adaptarse a cambios en los requisitos, que son comunes en el contexto de una clínica médica.
+    \item Permite entregas rápidas: XP se centra en entregas rápidas y frecuentes, lo cual es importante para un proyecto con alta importancia para el cliente.
+\end{itemize}
+
+
+
+\section{Filtros}
+
+La metodología XP se basa en un conjunto de filtros que permiten adaptar la metodología al contexto específico del proyecto. En el caso del proyecto de gestión de citas médicas, se aplicarán los siguientes filtros:
+\begin{itemize}
+    \item Tamaño del proyecto: El proyecto es relativamente pequeño, por lo que se utilizarán las prácticas de XP para proyectos pequeños.
+    \item Periodicidad de realimentación con el cliente: El cliente proporcionará retroalimentación constante al equipo de desarrollo, por lo que se utilizarán las prácticas de XP para proyectos con retroalimentación constante.
+    \item Estado de la tecnología: La tecnología utilizada para el proyecto es relativamente madura, por lo que se utilizarán las prácticas de XP para proyectos con tecnología madura.
+\end{itemize}
+
+
+\section{Conclusiones}
+
+La metodología XP es una buena opción para el desarrollo del sistema de gestión de citas médicas para la Clínica Regional de Montelibano. La metodología se adapta bien al contexto del proyecto y sus características. Los filtros aplicados permitirán adaptar la metodología al contexto específico del proyecto.
+
+%Encyclopædia Britannica. (n.d.). Computer programmers discuss software development. [Photograph]. Britannica ImageQuest. Retrieved October 19, 2023, from https://quest-eb-com.bdigital.sena.edu.co/images/132_1584681
+\bibliographystyle{apacite}
+\nocite{*}
+\bibliography{referenciados}
+
+\end{document}

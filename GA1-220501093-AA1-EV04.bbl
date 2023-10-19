@@ -1,0 +1,116 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Beck%
+\ \BBA {} Andr{\'e}s%
+}{%
+Beck%
+\ \BBA {} Andr{\'e}s%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Beck2004-oo}
+\APACinsertmetastar {%
+Beck2004-oo}%
+\begin{APACrefauthors}%
+Beck, K.%
+\BCBT {}\ \BBA {} Andr{\'e}s, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2004}.
+\newblock
+\APACrefbtitle {Extreme Programming Explained: Embrace Change} {Extreme
+  programming explained: Embrace change}.
+\newblock
+\APACaddressPublisher{}{Addison-Wesley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fowler%
+}{%
+Fowler%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+Fowler2002-en}
+\APACinsertmetastar {%
+Fowler2002-en}%
+\begin{APACrefauthors}%
+Fowler, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2002}.
+\newblock
+\APACrefbtitle {Refactoring: Improving the Design of Existing Code}
+  {Refactoring: Improving the design of existing code}.
+\newblock
+\APACaddressPublisher{}{Addison-Wesley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Martin%
+}{%
+Martin%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+Martin2002-iw}
+\APACinsertmetastar {%
+Martin2002-iw}%
+\begin{APACrefauthors}%
+Martin, R\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2002}.
+\newblock
+\APACrefbtitle {Agile Software Development: Principles, Patterns, and
+  Practices} {Agile software development: Principles, patterns, and practices}.
+\newblock
+\APACaddressPublisher{}{Pearson Education}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sommerville%
+}{%
+Sommerville%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+Sommerville2005-zg}
+\APACinsertmetastar {%
+Sommerville2005-zg}%
+\begin{APACrefauthors}%
+Sommerville, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2005}.
+\newblock
+\APACrefbtitle {Ingenieria del software} {Ingenieria del software}\
+  (\PrintOrdinal{7}\ \BEd).
+\newblock
+\APACaddressPublisher{}{Pearson Educacion}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\APACcitebtitle {What is extreme programming?}}{%
+\APACcitebtitle {What is extreme programming?}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+noauthor_undated-fv}
+\APACinsertmetastar {%
+noauthor_undated-fv}%
+\APACrefbtitle {What is extreme programming?} {What is extreme programming?}
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APAChowpublished
+  {\url{https://ronjeffries.com/xprog/what-is-extreme-programming/}}.
+\newblock
+\APACrefnote{Accessed: 2023-10-19}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
